@@ -18,6 +18,7 @@ export type CategoryCreateCommand = {
   name: string;
   description?: string | null;
   is_active?: boolean;
+  created_at?: Date;
 };
 
 export class Category extends Entity {
