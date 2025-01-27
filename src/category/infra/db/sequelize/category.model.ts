@@ -15,7 +15,7 @@ export type CategoryModelProps = {
 };
 
 @Table({ tableName: "categories", timestamps: false })
-export class CategoryModel extends Model {
+export class CategoryModel extends Model<CategoryModel> {
   @PrimaryKey
   @Column({ type: DataType.UUID })
   declare category_id: string;

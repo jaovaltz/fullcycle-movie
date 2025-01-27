@@ -12,7 +12,7 @@ export class Uuid extends ValueObject {
   private validate() {
     const isValid = uuidValidate(this.id);
     if (!isValid) {
-      throw new InvalidUuidError("Invalid UUID");
+      throw new InvalidUuidError("ID must be a valid UUID");
     }
   }
 
